@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Rock,Paper,Sciccors!</title>
+</head>
+<body>
+    <div class="titleContainer">
+        <h1 class="title words">Can you Beat the Machine?</h1>
+    </div>
+    <div class="gameContainer">
+        <button id="rock" value="rock" onclick="round('rock')">Rock</button>
+        <button id="paper" value="paper" onclick="round('paper')">Paper</button>
+        <button id="scissor" value="scissor" onclick="round('scissors')">Scissors</button>
+    </div>
+    <div id="results" class="resultContainer">
+        <div id="winner" class="resultsData" style="display:none">You Won!</div>
+        <div id="loser" class="resultsData" style="display:none">You Lost.</div>
+        <div id="tieGame" class="resultsData" style="display:none">Well...Its a tie!</div>
+    </div>
+    <form class="score" action="" >
+        <label class="scoreLabel" for="win"><b>Wins:</b></label>
+        <div id="win">
+            0
+        </div>
+        <label class="scoreLabel"  for="tie"><b>Ties:</b></label>
+        <div id="tie">
+            0
+        </div>
+        <label class="scoreLabel"  for="lose"><b>Loses:</b></label>
+        <div id="lose">
+            0
+        </div>
+        <label class="scoreLabel"  for="total"><b>Total Rounds:</b></label>
+        <div id="total">
+            0
+        </div>
+    </form>
+    <button id="reset" onclick="newGame()">New Game</button>
+</body>
+</html>
