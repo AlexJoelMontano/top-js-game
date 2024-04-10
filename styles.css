@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.titleContainer{
+    display: flex;
+    justify-content: center;
+}
+.gameContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.resultsContainer{
+    display: flex;
+    justify-content: center;
+}
+.resultsData{
+    margin-top: 4%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -10%;
+    margin-top: 5%;
+}
+.scoreLabel {
+    margin-left: 10%;
+    margin-right: 2%;
+}
+.newGameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+.newGameButton {
+    width: 160px;
+}
